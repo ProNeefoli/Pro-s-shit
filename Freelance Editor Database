@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Freelance Editor Database</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* SECTION */
+
+.projects{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h1{
+    font-size:42px;
+    font-weight:700;
+}
+
+.section-title p{
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+/* GRID */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.project-card{
+    background:#111827;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s ease;
+    border:1px solid rgba(255,255,255,0.05);
+    position:relative;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* IMAGE */
+
+.project-image{
+    position:relative;
+    overflow:hidden;
+}
+
+.project-image img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    transition:0.5s ease;
+}
+
+.project-card:hover .project-image img{
+    transform:scale(1.08);
+}
+
+/* CATEGORY */
+
+.category{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ef4444;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* CONTENT */
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.project-content p{
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* CLIENT */
+
+.client{
+    margin-top:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.client-name{
+    color:#f8fafc;
+    font-weight:600;
+}
+
+.rating{
+    color:#facc15;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-size:14px;
+    transition:0.3s ease;
+    font-weight:500;
+}
+
+.btn-primary{
+    background:#ef4444;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#dc2626;
+}
+
+.btn-secondary{
+    border:1px solid #334155;
+    color:#e2e8f0;
+}
+
+.btn-secondary:hover{
+    background:#1e293b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .section-title h1{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="projects">
+
+    <div class="section-title">
+        <h1>Similar Client Projects</h1>
+        <p>Professional photo & video editing projects completed for clients worldwide.</p>
+    </div>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="">
+                <span class="category">Wedding Film</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>Cinematic Wedding Edit</h3>
+
+                <p>
+                    Created a cinematic wedding highlight film with color grading,
+                    storytelling cuts, transitions, and emotional background music.
+                </p>
+
+                <div class="client">
+                    <span class="client-name">Client: Sarah Studio</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    <a href="#" class="btn btn-secondary">Live Preview</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="">
+                <span class="category">Social Media</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>Instagram Reel Package</h3>
+
+                <p>
+                    Edited high-retention Instagram reels with subtitles,
+                    transitions, sound sync, and viral-style pacing.
+                </p>
+
+                <div class="client">
+                    <span class="client-name">Client: FitLife Media</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    <a href="#" class="btn btn-secondary">Live Preview</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop" alt="">
+                <span class="category">Photo Retouch</span>
+            </div>
+
+            <div class="project-content">
+
+                <h3>Professional Photo Retouch</h3>
+
+                <p>
+                    High-end skin retouching, Lightroom color correction,
+                    background cleanup, and premium portrait enhancement.
+                </p>
+
+                <div class="client">
+                    <span class="client-name">Client: Dreams Photography</span>
+                    <span class="rating">★★★★★</span>
+                </div>
+
+                <div class="buttons">
+                    <a href="#" class="btn btn-primary">View Project</a>
+                    <a href="#" class="btn btn-secondary">Live Preview</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
